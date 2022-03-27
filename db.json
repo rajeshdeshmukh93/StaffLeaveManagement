@@ -1,0 +1,262 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "leaveManage": [
+    {
+      "from_date": "22nd March,2022",
+      "to_date": "25th March,2022",
+      "reason": "Personal ",
+      "status": "",
+      "action": "",
+      "id": 1
+    },
+    {
+      "from_date": "1st may,2022",
+      "to_date": "2nd may,2022",
+      "reason": "due to cough",
+      "status": "Pending",
+      "action": "",
+      "id": 15
+    },
+    {
+      "from_date": "3may,1999",
+      "to_date": "3may,1993",
+      "reason": "cold",
+      "status": "Pending",
+      "action": "",
+      "userId": "13",
+      "id": 16
+    },
+    {
+      "from_date": "22nd Feb,2022",
+      "to_date": "23rd Feb,2022",
+      "reason": "cold",
+      "status": "Pending",
+      "action": "",
+      "userId": "13",
+      "id": 17
+    },
+    {
+      "from_date": "1stmay,2022",
+      "to_date": "22ndMay,2022",
+      "reason": "fever",
+      "status": "Pending",
+      "action": "",
+      "userId": "13",
+      "id": 18
+    },
+    {
+      "from_date": "21st march,2020",
+      "to_date": "22ndmarch,2020",
+      "reason": "hungry",
+      "status": "Pending",
+      "action": "",
+      "userId": "14",
+      "id": 19
+    },
+    {
+      "from_date": "27feb,2022`",
+      "to_date": "28feb,2022",
+      "reason": "fever",
+      "status": "Pending",
+      "action": "",
+      "userId": "15",
+      "id": 20
+    },
+    {
+      "from_date": "22ndmay,2022",
+      "to_date": "23rdmay,2022",
+      "reason": "fever",
+      "status": "Pending",
+      "action": "",
+      "name": "akasy kaneri",
+      "userId": "13",
+      "id": 21
+    },
+    {
+      "id": 22,
+      "name": "ak",
+      "from_date": "29feb",
+      "to_date": "29feb",
+      "reason": "fever",
+      "status": "Rejected"
+    },
+    {
+      "id": 23,
+      "name": "akshay kaneri",
+      "from_date": "30feb",
+      "to_date": "30feb",
+      "reason": "stomach",
+      "status": "Approve / Rejected"
+    },
+    {
+      "id": 24,
+      "name": "raj",
+      "from_date": "1st aug",
+      "to_date": "2nd aug",
+      "reason": "fever",
+      "status": "Approve"
+    },
+    {
+      "id": 25,
+      "name": "raj",
+      "from_date": "2022-03-26",
+      "to_date": "2022-03-27",
+      "reason": "fever",
+      "status": "Approve"
+    }
+  ],
+  "signupUser": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "rajesh",
+      "userName": "rajesh deshmukh",
+      "email": "rajeshdeshmukh@gmail.com",
+      "number": 9860218219,
+      "department": "HOD",
+      "password": "rajesh@123",
+      "id": 2
+    },
+    {
+      "name": "viki",
+      "userName": "viki",
+      "email": "viki@gmail.com",
+      "number": 999999999,
+      "department": "ETC",
+      "password": "viki",
+      "id": 3
+    },
+    {
+      "name": "llll",
+      "userName": "lll",
+      "email": "uuuu@",
+      "number": 0,
+      "department": "IT",
+      "password": "09877",
+      "id": 4
+    },
+    {
+      "name": "jivan",
+      "userName": "jivan popalghat",
+      "email": "jivan",
+      "number": 887878788,
+      "department": "ETC",
+      "password": "dqusyus",
+      "id": 5
+    },
+    {
+      "email": "rajddeshmukh93@gmail.com",
+      "password": "deshAaru@123",
+      "userName": "Rajesh.Deshmukh",
+      "id": 6
+    },
+    {
+      "email": "rajddeshmukh93@gmail.com",
+      "password": "desh",
+      "id": 7
+    },
+    {
+      "email": "rajddeshmukh93@gmail.com",
+      "password": "desh",
+      "id": 8
+    },
+    {
+      "name": "abc",
+      "userName": "abc xyz",
+      "email": "abc@gmail.com",
+      "number": 98989898998,
+      "department": "ETC",
+      "password": "abc",
+      "role": "staff",
+      "id": 9
+    },
+    {
+      "name": "",
+      "userName": "sds",
+      "email": "fss",
+      "number": 3444,
+      "department": "ETC",
+      "password": "erwee",
+      "role": "HOD",
+      "id": 10
+    },
+    {
+      "name": "",
+      "userName": "rajesh deshmukh",
+      "email": "rajesh deshmukh",
+      "number": "",
+      "department": "",
+      "password": "",
+      "role": "",
+      "id": 11
+    },
+    {
+      "name": "dipesh",
+      "userName": "dipesh",
+      "email": "dep@gmail.com",
+      "number": 97878686,
+      "department": "IT",
+      "password": "dep",
+      "role": "HOD",
+      "id": 12
+    },
+    {
+      "name": "raj",
+      "userName": "rajesh",
+      "email": "raj@gmail.com",
+      "contact": 9892393,
+      "password": "raj",
+      "role": "Staff",
+      "id": 13
+    },
+    {
+      "name": "kalu",
+      "userName": "kalu desh",
+      "email": "kal@gmail.com",
+      "contact": 989898,
+      "password": "kal",
+      "role": "Staff",
+      "id": 14
+    },
+    {
+      "name": "xyz@gmail.com",
+      "userName": "xyz",
+      "email": "xyz@gmail.com",
+      "contact": 78777979,
+      "password": "xyz",
+      "role": "Staff",
+      "id": 15
+    },
+    {
+      "name": "ak",
+      "userName": "ak",
+      "email": "ak@gamil.com",
+      "contact": 878797,
+      "password": "ak",
+      "role": "Staff",
+      "id": 16
+    },
+    {
+      "name": "shubham",
+      "userName": "sk",
+      "email": "sk@gmail.com",
+      "number": 89898,
+      "department": "IT",
+      "password": "",
+      "role": "HOD",
+      "id": 17
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

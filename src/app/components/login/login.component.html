@@ -1,0 +1,37 @@
+<p><strong>Login Form</strong></p>
+
+
+
+<div class="container-fluid bg">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <small class="text-danger" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">Please Enter
+            Valid Email</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+          <small class="text-danger" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">Please
+            Enter Correct Password</small>
+        </div>
+      
+        <!-- <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" formControlName="role">
+              <option *ngFor="let r of roles" value={{r}}>{{r}}</option>
+            </select>
+            <label for="floatingSelect">Role</label>
+          </div> -->
+        <div style="margin-top: 10px;">
+          <button type="submit" [disabled]="loginForm.controls['email' || 'password'].invalid"
+            class="btn btn-primary btn-block" >Submit</button>
+        </div>
+      
+      </form>
+    </div>
+  </div>
+</div>

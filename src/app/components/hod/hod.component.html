@@ -1,0 +1,38 @@
+<p><strong>HOD Dashboard!</strong></p>
+
+<div class="container">
+    
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table" class="table-container">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">From_Date</th>
+              <th scope="col">To_Date</th>
+              <th scope="col">Reason</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor=" let data of allleavedata">
+              <td>{{data.id}}</td>
+              <td>{{data.name}}</td>
+              <td>{{data.from_date}}</td>
+              <td>{{data.to_date}}</td>
+              <td>{{data.reason}}</td>
+              <td>{{data.status}}</td>
+              <a routerLink="/hodupdate/{{data.id}}" type="button" class="btn btn-warning">Edit</a>
+              <!-- <button type="button" class="btn btn-warning">Edit</button> -->
+              <!-- <button>Delete</button> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,30 @@
+<p><strong>Dashboard works!</strong></p>
+
+<form [formGroup]="dashboardForm" (ngSubmit)="showLeave()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">From Date</label>
+        <input type="text" formControlName="from_date" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">To Date</label>
+        <input type="text" formControlName="to_date" class="form-control"
+            id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Reason</label>
+        <input type="text" formControlName="reason" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Status</label>
+        <input type="text" formControlName="status" class="form-control" id="exampleInputPassword1">
+    </div>
+    <!-- <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Action</label>
+        <input type="text" formControlName="action" class="form-control" id="exampleInputPassword1">
+    </div> -->
+    
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>

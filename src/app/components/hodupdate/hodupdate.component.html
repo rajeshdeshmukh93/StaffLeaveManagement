@@ -1,0 +1,40 @@
+<p>hodupdate works!</p>
+
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form [formGroup]="hodupdateForm" (ngSubmit)="updateForm()" class="form-container">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">ID</label>
+                    <input type="text" formControlName="id" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">From_Date</label>
+                    <input type="text" formControlName="from_date" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">To_Date</label>
+                    <input type="text" formControlName="to_date" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Reason</label>
+                    <input type="text" formControlName="reason" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Status</label>
+                    <input type="text" formControlName="status" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<p style="color:brown"><strong>HOD Registration!</strong></p>
+
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="signupForm" (ngSubmit)="signUp()" class="form-container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <span class="text-danger" *ngIf="signupForm.get('name')?.touched && signupForm.get('name')?.invalid">Name is
+            required</span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">UserName</label>
+          <input type="text" formControlName="userName" class="form-control" id="exampleInputPassword1">
+          <span class="text-danger"
+            *ngIf="signupForm.get('userName')?.touched && signupForm.get('userName')?.invalid">UserName is required</span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1">
+          <small class="text-danger" *ngIf="signupForm.get('email')?.touched && signupForm.get('email')?.invalid">Email is
+            required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Number</label>
+          <input type="number" formControlName="number" class="form-control" id="exampleInputPassword1">
+          <small class="text-danger" *ngIf="signupForm.get('number')?.touched && signupForm.get('number')?.invalid">Number is
+            required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Department</label>
+          <select class="form-control" formControlName="department">
+            <option value="IT">IT</option>
+            <option value="ETC">ETC</option>
+          </select>
+          <span class="text-danger"
+            *ngIf="signupForm.get('department')?.touched && signupForm.get('department')?.invalid">Department is
+            required</span>
+          <!-- <input type="text" formControlName="department" class="form-control" id="exampleInputPassword1"> -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="text" formControlName="password" class="form-control" id="exampleInputPassword1">
+          <span class="text-danger"
+            *ngIf="signupForm.get('password')?.touched && signupForm.get('password')?.invalid">Password is required</span>
+        </div>
+        <!-- <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Role</label>
+            <input type="text" formControlName="role" class="form-control" id="exampleInputPassword1">
+          </div> -->
+        <button type="submit"
+          [disabled]="signupForm.controls['name' || 'userName' || 'email' || 'number' || 'department' || 'password'].invalid"
+          class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
