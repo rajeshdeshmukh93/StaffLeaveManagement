@@ -35,13 +35,16 @@ export class HodregistrationComponent implements OnInit {
     // }, err => {
     //   alert("Something went wrong");
     // })
-    this.api.registerUser(this.signupForm.value).subscribe( res => {
-      alert("SignUp Successfully");
-      this.signupForm.reset();
-      this.router.navigate(['login']);
-    },err => {
-      alert("Something went Wrong");
-    })
+    if(this.signupForm.valid){
+      this.api.registerUser(this.signupForm.value).subscribe( res => {
+        alert("SignUp Successfully");
+        this.signupForm.reset();
+        this.router.navigate(['login']);
+      },err => {
+        alert("Something went Wrong");
+      })
+    }
+    
 
   }
 

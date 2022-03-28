@@ -13,6 +13,7 @@ import { ApiService } from './service/api.service';
 import { StaffModule } from './components/staff/staff.module';
 import { HodComponent } from './components/hod/hod.component';
 import { HodupdateComponent } from './components/hodupdate/hodupdate.component';
+import { NavComponent } from './components/nav/nav.component';
 
 
 
@@ -25,11 +26,12 @@ import { HodupdateComponent } from './components/hodupdate/hodupdate.component';
     PageNotFoundComponent,
     HodComponent,
     HodupdateComponent,
+    NavComponent,
     
   ],
   imports: [
+    
     BrowserModule,
-    StaffModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

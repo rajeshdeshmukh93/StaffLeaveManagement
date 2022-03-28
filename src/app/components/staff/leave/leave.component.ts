@@ -20,9 +20,9 @@ export class LeaveComponent implements OnInit {
       reason:[''],
       status:['Pending'],
       action:[''],
-      name:[''],
       userId:localStorage.getItem('userId'),
-      userName:localStorage.getItem('userName')
+      userName:localStorage.getItem('userName'),
+      name:[''],
     })
     this.leaveData();
   }

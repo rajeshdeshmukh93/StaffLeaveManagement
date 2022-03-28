@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LeaveComponent } from './leave/leave.component';
-import { Router, RouterModule } from '@angular/router';
+import { Router, RouterModule,Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
-const staffRoutes = [
+
+const staffRoutes: Routes = [
   { path:'', children:[
     {path:'dashboard',component:DashboardComponent},
     {path:'leave', component:LeaveComponent}
   ]},
- 
 ]
 
 @NgModule({

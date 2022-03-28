@@ -1,6 +1,5 @@
-<p><strong>Dashboard works!</strong></p>
 
-<form [formGroup]="dashboardForm" (ngSubmit)="showLeave()">
+<form *ngIf="false" [formGroup]="dashboardForm">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">From Date</label>
         <input type="text" formControlName="from_date" class="form-control" id="exampleInputEmail1"
@@ -28,3 +27,21 @@
         <button type="submit">Submit</button>
     </div>
 </form>
+
+<div class="container-fluid" style="margin-top: 10px;">
+    <div class="row">
+        <div class="col-md-3">
+            <h5 style="color: brown;"><strong>Total Leave</strong></h5>
+            <h1>{{totalLeave}}</h1> 
+        </div>
+        <div class="col-md-3">
+            <h5 style="color:brown"><strong>Approve leave</strong></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 style="color:brown"><strong>Rejected leave</strong></h5>
+        </div>
+        <div class="col-md-3">
+            <h5 style="color:brown"><strong>Pending leave</strong></h5>
+        </div>
+    </div>
+</div>

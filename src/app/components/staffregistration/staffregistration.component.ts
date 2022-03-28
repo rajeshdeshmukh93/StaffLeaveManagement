@@ -27,6 +27,16 @@ export class StaffregistrationComponent implements OnInit {
 
   signUp(){
     console.log(this.signupForm.value);
+    if(this.signupForm.valid){
+      this.api.registerUser(this.signupForm.value).subscribe( res => {
+        alert("SignUp Successfully");
+        this.signupForm.reset();
+        this.router.navigate(['login']);
+      },err=>{
+        alert("Something went wrong");
+      })
+    }
+    
     // this.http.post<any>("http://localhost:3000/signupStaff",this.signupForm.value).subscribe( res => {
     //   alert("SignUp successfully");
     //   this.signupForm.reset();
@@ -34,13 +44,7 @@ export class StaffregistrationComponent implements OnInit {
     // }, err=> {
     //   alert("Something went wrong");
     // })
-    this.api.registerUser(this.signupForm.value).subscribe( res => {
-      alert("SignUp Successfully");
-      this.signupForm.reset();
-      this.router.navigate(['login']);
-    },err=>{
-      alert("Something went wrong");
-    })
+   
   }
 
 

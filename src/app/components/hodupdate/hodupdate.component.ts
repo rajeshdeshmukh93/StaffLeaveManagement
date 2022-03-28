@@ -34,14 +34,16 @@ export class HodupdateComponent implements OnInit {
         from_date:[result.from_date],
         to_date:[result.to_date],
         reason:[result.reason],
-        status: [result.status]
+        status: [result.status],
+        userId:localStorage.getItem('userId'),
+        userName:localStorage.getItem('userName')
       })
     })
   }
 
   updateForm() { 
     this.api.updateleaveData(this.id,this.hodupdateForm.value).subscribe( res => {
-      console.log(res, "Data updated successfully");
+      alert("Data updated successfully");
       this.hodupdateForm.reset();
     })
   }
