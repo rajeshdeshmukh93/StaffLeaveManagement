@@ -34,6 +34,7 @@ export class LeaveComponent implements OnInit {
       if(this.leaveForm.value !== ''){
         alert("Added leave data");
         this.leaveForm.reset();
+        //this.leaveForm.Close();
         this.leaveData();
       }
     })
