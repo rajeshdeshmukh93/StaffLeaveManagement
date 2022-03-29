@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   
   data:any[]=[];
   totalLeave=0;
-  rejectedleave:[]=[];
+  rejectedleave=0;
   approveLeave:number=0;
   pendingLeave:number=0;
 
@@ -34,16 +34,27 @@ export class DashboardComponent implements OnInit {
 
   getallLeave(){
     this.api.getallleaveData().subscribe((res:any) => {
-     console.log(res);
+     //console.log(res);
      //Total leave
-      this.totalLeave = res.filter( (a:any) => {
+     
+      this.data=res.filter( (a:any) => {
         if(localStorage.getItem('userId') === a.userId){
-          console.log("Dashboard data:",a.status);
-          // return a.status == 'Approve'
+          console.log("Dashboard data:",a);
+          console.log("Status:",a.status);
           return a;
         }
-      }).length
-      console.log("TotalLeave",this.totalLeave);
+      })
+      this.totalLeave=this.data.length;
+      this.data.forEach( (d:any) => {
+        if(d.status === 'Approve'){
+          this.approveLeave++
+        }else if(d.status === "Pending"){
+          this.pendingLeave++
+        }else if(d.status === "Reject"){
+          this.rejectedleave++
+        }
+      })
+      
     })
   }
 

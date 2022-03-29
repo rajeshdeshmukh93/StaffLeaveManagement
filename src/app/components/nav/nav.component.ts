@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   public show:boolean=true;
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +20,9 @@ export class NavComponent implements OnInit {
 
   logOut(){
     localStorage.removeItem('userId');
+    localStorage.removeItem('userName');
+    localStorage.removeItem('role');
+    this.router.navigate(['login']);
   }
 
 }

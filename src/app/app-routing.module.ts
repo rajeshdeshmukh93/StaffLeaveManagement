@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/auth.guard';
+import { RoleGuard } from './auth/role.guard';
 import { HodComponent } from './components/hod/hod.component';
 import { HodregistrationComponent } from './components/hodregistration/hodregistration.component';
 import { HodupdateComponent } from './components/hodupdate/hodupdate.component';
@@ -14,9 +16,8 @@ const routes: Routes = [
   { path:'login', component:LoginComponent },
   { path:'hodreg', component:HodregistrationComponent },
   { path:'staffreg', component:StaffregistrationComponent},
-  { path:'hod', component:HodComponent},
+  { path:'hod', canActivate:[AuthGuard], component:HodComponent},
   { path:'hodupdate/:id',component:HodupdateComponent},
-  // { path:'nav', component:NavComponent},
   { path:'', loadChildren:()=> import('./components/staff/staff.module').then(m => m.StaffModule)},
   { path:'**', component:PageNotFoundComponent}
 ];

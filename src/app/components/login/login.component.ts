@@ -42,6 +42,7 @@ export class LoginComponent implements OnInit {
         this.loginForm.reset();
         localStorage.setItem("userId",user[0].id);
         localStorage.setItem("userName",user[0].name);
+        localStorage.setItem('role',user[0].role);
         // this.router.navigate(['staff']);
         // alert(`login as ${user[0].role}`);
         if(user[0].role === "Staff"){

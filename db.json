@@ -28,15 +28,14 @@
       "userName": "xyz@gmail.com"
     },
     {
+      "id": 3,
+      "name": "abc",
       "from_date": "2022-04-10",
       "to_date": "2022-05-08",
       "reason": "cold",
-      "status": "Pending",
-      "action": "",
-      "userId": "9",
-      "userName": "abc",
-      "name": "abc",
-      "id": 3
+      "status": "Approve",
+      "userId": "12",
+      "userName": "dipesh"
     },
     {
       "id": 4,
@@ -79,6 +78,16 @@
       "userName": "abc",
       "name": "abc",
       "id": 9
+    },
+    {
+      "id": 10,
+      "name": "rajesh deshmukh",
+      "from_date": "2022-06-01",
+      "to_date": "2022-06-02",
+      "reason": "fever",
+      "status": "Rejected",
+      "userId": "13",
+      "userName": "raj"
     }
   ],
   "signupUser": [
@@ -166,6 +175,29 @@
       "password": "",
       "role": "Staff",
       "id": 19
+    },
+    {
+      "email": "raj@gmail.com",
+      "password": "raj",
+      "id": 20
+    },
+    {
+      "email": "raj@gmail.com",
+      "password": "raj",
+      "id": 21
+    },
+    {
+      "name": "pqr",
+      "userName": "pqr",
+      "email": "pqr@gmail.com",
+      "contact": 98989898998,
+      "password": "abc",
+      "id": 22
+    },
+    {
+      "email": "pqr@gmail.com",
+      "password": "abc",
+      "id": 23
     }
   ],
   "profile": {

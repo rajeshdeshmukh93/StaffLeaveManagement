@@ -2,13 +2,11 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Leave Management </a>
+        <a class="navbar-brand">Leave Management </a>
         <div>
             <!-- <button type="submit" class="btn btn-primary" >Add Leave</button>
             <button class="btn btn-primary" routerLink="/dashboard">Dashboard</button> -->
             <a *ngIf="!isloggedIn()" routerLink="login">Login</a>&nbsp;
-            <a *ngIf="!isloggedIn()" routerLink="staffreg">StaffSignIn</a>&nbsp;
-            <a *ngIf="!isloggedIn()" routerLink="hodreg">HODSignIn</a>&nbsp;
             <button class="button" *ngIf="isloggedIn()" (click)="logOut()">Logout</button>
             
         </div>
